@@ -1,0 +1,19 @@
+body { background-color: black; }
+
+/* Still want to figure out the original font for gear5 manga panel for aesthetic sake */
+header {
+    text-align: center;
+    color:white;
+    font-size:36px;
+    font-weight: 700;
+    padding:5px;
+    margin:0;
+}
+
+img{
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+/* Ideal for consistent scaling of img to screen-size */
+.container .list { columns: 500px; }

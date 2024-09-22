@@ -1,0 +1,42 @@
+body {
+    background-color: black;
+    text-align: center;
+    min-height: 95vh;
+    overflow: hidden;
+}
+
+header {
+    color:white;
+    font-size: 32px;
+    margin-bottom: 1em;
+}
+
+.container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:flex-start;
+    width:100%;
+    
+}
+
+.item {
+    width: 300px;
+    flex:1 1 20px; /*50px*/
+    margin:10px;
+    transition: transform .3s cubic-bezier( 0.79, 0.33, 0.88, 0.85 );  
+    /* check this out to help specify your own bezier parameters https://www.cssportal.com/css-cubic-bezier-generator/*/
+}
+
+.item img {
+    width:99%;
+    height:99%;
+    object-fit: cover;
+}
+
+.item:hover{
+    flex:3 1 30%;
+    transform: scale(1.05);
+    width:800px;
+}
+
